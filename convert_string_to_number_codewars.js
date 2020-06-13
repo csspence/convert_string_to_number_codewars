@@ -10,7 +10,12 @@ stringToNumber("1405") == 1405
 stringToNumber("-7"  ) == -7
 */
 
-var stringToNumber = function(str){
-  // put your code here
-  return null;
+const stringToNumber = (str) => {
+  let num;
+  if(str[0] === '-') {
+    num = Number(str.slice(1)) - Number(str.slice(1)) - Number(str.slice(1));
+  } else {
+    num = Number(str)
+  }
+  return num;
 }
